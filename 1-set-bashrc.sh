@@ -8,7 +8,8 @@ function main () {
 
 	mkdir -p ${XDG_CONFIG_HOME}/nvim/
 
-	cp ./toml/* ${XDG_CONFIG_HOME}/nvim/
+	cp ./init.vim ${XDG_CONFIG_HOME}/nvim/
+	cp -r ./toml ${XDG_CONFIG_HOME}/nvim/
 }
 
 main

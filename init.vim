@@ -18,8 +18,8 @@ endif
 
 let &runtimepath = s:dein_repo_dir .",". &runtimepath
 " プラグイン読み込み＆キャッシュ作成
-let s:toml_file = fnamemodify(expand('<sfile>'), ':h').'/plugins.toml'
-let s:toml_lazy = fnamemodify(expand('<sfile>'), ':h').'/lazy.toml'
+let s:toml_file = fnamemodify(expand('<sfile>'), ':h').'/toml/plugins.toml'
+let s:toml_lazy = fnamemodify(expand('<sfile>'), ':h').'/toml/lazy.toml'
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
   call dein#load_toml(s:toml_file, {'lazy': 0})
