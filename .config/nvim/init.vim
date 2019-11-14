@@ -3,12 +3,16 @@ if &compatible
   set nocompatible
 endif
 
+let g:false = 0
+let g:true = 1
+
 augroup MyAutoCmd
   autocmd!
 augroup END
 
 let s:cache_home = empty($XDG_CACHE_HOME) ? expand('~/.cache') : $XDG_CACHE_HOME
 let s:config_home = empty($XDG_CONFIG_HOME) ? expand('~/.config') : $XDG_CONFIG_HOME
+
 let s:dein_dir = s:cache_home . '/dein'
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
@@ -20,10 +24,11 @@ let &runtimepath = s:dein_repo_dir .",". &runtimepath
 " プラグイン読み込み＆キャッシュ作成
 let s:toml_file = fnamemodify(expand('<sfile>'), ':h').'/toml/plugins.toml'
 let s:toml_lazy = fnamemodify(expand('<sfile>'), ':h').'/toml/lazy.toml'
+
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
-  call dein#load_toml(s:toml_file, {'lazy': 0})
-  call dein#load_toml(s:toml_lazy, {'lazy': 1})
+  call dein#load_toml(s:toml_file, {'lazy': g:false})
+  call dein#load_toml(s:toml_lazy, {'lazy': g:true})
   call dein#end()
   call dein#save_state()
 endif
@@ -44,4 +49,4 @@ if has('vim_starting') && dein#check_install()
   call dein#install()
 endif
 
-"autocmd VimEnter * execute 'NERDTree'
+autocmd VimEnter * execute 'NERDTree'
