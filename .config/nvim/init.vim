@@ -31,6 +31,13 @@ endif
 " Required:
 filetype plugin indent on
 syntax enable
+set number
+set list
+
+" TABキーを押した際にタブ文字の代わりにスペースを入れる
+set expandtab
+set tabstop=2
+set shiftwidth=2
 
 " 不足プラグインの自動インストール
 if has('vim_starting') && dein#check_install()
