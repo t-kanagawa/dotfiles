@@ -44,4 +44,4 @@ if has('vim_starting') && dein#check_install()
   call dein#install()
 endif
 
-autocmd VimEnter * execute 'NERDTree'
+"autocmd VimEnter * execute 'NERDTree'
