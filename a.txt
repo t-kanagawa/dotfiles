@@ -1,1 +1,0 @@
-ln -s $(readlink -f nvim) ~/.config/nvim
