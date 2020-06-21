@@ -1,4 +1,13 @@
-# dotfiles
+# dotfiles #
+
+## Usage
+
+環境構築に必要なアプリケーションをインストールする
+（一応どのパスから実行しても大丈夫）
+
+```shell
+bash .bin/install-application.sh
+```
 
 ## 事前準備
 
