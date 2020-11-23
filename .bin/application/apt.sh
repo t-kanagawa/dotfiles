@@ -1,20 +1,19 @@
 #!/usr/bin/env bash
 set -ue
 
-#
-# Docker Composeインストール
-#
+readonly SCRIPT_DIR=$(cd $(dirname $0); pwd)
+if [ "`whoami`" != "root" ]; then
+  echo "Require root privilege"
+  exit 1
+fi
 
 function main() {
-  sudo apt update &&
-    sudo apt upgrade -y &&
-    sudo apt install -y \
-      jq \
-      vim \
-      cron #定期実行
+  apt update &&
+    apt upgrade -y &&
+    apt install -y jq vim ntpdate
 
-  # cronサービス起動
-  sudo systemctl enable cron && sudo systemctl restart cron
+  # apt install -y cron
+  # systemctl enable cron && systemctl restart cron
 }
 
 main
