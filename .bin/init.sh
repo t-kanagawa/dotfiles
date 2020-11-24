@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 set -ue
 
-readonly SCRIPT_DIR=$(cd $(dirname $0); pwd)
-if [ "`whoami`" != "root" ]; then
+readonly SCRIPT_DIR=$(
+  cd $(dirname $0)
+  pwd
+)
+if [ "$(whoami)" != "root" ]; then
   echo "Require root privilege"
   exit 1
 fi

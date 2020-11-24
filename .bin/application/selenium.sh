@@ -1,13 +1,16 @@
-#!/usr/bin/env bash
+#!/bin/bash
 set -ue
 
-readonly SCRIPT_DIR=$(cd $(dirname $0); pwd)
-if [ "`whoami`" != "root" ]; then
+readonly SCRIPT_DIR=$(
+  cd $(dirname $0)
+  pwd
+)
+if [ "$(whoami)" != "root" ]; then
   echo "Require root privilege"
   exit 1
 fi
 
-echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list
+echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >>/etc/apt/sources.list.d/google.list
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
 apt update && apt install -y google-chrome-stable python3-pip
 

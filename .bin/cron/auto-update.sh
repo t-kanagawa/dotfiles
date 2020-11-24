@@ -1,6 +1,15 @@
-#!/usr/bin/env bash
+#!/bin/bash
 set -ue
 
-sudo apt update \
-&& sudo apt upgrade -y \
-&& sudo apt autoremove
+readonly SCRIPT_DIR=$(
+  cd $(dirname $0)
+  pwd
+)
+if [ "$(whoami)" != "root" ]; then
+  echo "Require root privilege"
+  exit 1
+fi
+
+apt update &&
+  apt upgrade -y &&
+  apt autoremove
