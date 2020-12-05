@@ -1,5 +1,4 @@
-#!/bin/bash
-set -ue
+#!/bin/bash -eu
 
 readonly SCRIPT_DIR=$(
   cd $(dirname $0)
@@ -12,4 +11,4 @@ fi
 
 apt update &&
   apt upgrade -y &&
-  apt autoremove
+  apt autoremove -y

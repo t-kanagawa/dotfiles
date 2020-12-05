@@ -1,5 +1,4 @@
-#!/bin/bash
-set -ue
+#!/bin/bash -eu
 
 readonly SCRIPT_DIR=$(
   cd $(dirname $0)
@@ -19,6 +18,7 @@ function main() {
   make_swap
 }
 
+# 2GBのスワップファイルを作成する
 function make_swap() {
   dd if=/dev/zero of=/swapfile bs=1M count=2048
   chmod 600 /swapfile
