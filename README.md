@@ -1,13 +1,5 @@
-# dotfiles #
+# dotfiles
 
-## Usage
-
-環境構築に必要なアプリケーションをインストールする
-（一応どのパスから実行しても大丈夫）
-
-```shell
-bash .bin/install-application.sh
-```
 
 ## 事前準備
 
@@ -18,7 +10,14 @@ bash .bin/install-application.sh
 
 適当な階層で以下のコマンドを実行
 '''
-git clone https://github.com/kanatakka/dotfiles.git
+git clone <https://github.com/kanatakka/dotfiles.git>
 '''
 
+## 利用方法
 
+環境構築に必要なアプリケーションをインストールする
+（一応どのパスから実行しても大丈夫）
+
+```shell
+bash .bin/install-application.sh
+```
