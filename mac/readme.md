@@ -19,5 +19,6 @@ brew bundle
 下記コマンドを実行
 
 ```sh
+rm -rf Brewfile
 brew bundle dump
 ```
