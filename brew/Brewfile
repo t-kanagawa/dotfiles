@@ -1,0 +1,33 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+brew "cask"
+brew "docker"
+brew "git"
+brew "mas"
+brew "openjdk"
+cask "alfred"
+cask "cloudflare-warp"
+cask "discord"
+cask "github"
+cask "google-chrome"
+cask "google-japanese-ime"
+cask "monitorcontrol"
+cask "springtoolsuite"
+cask "teamviewer"
+cask "visual-studio-code"
+mas "BetterSnapTool", id: 417375580
+mas "Compressor", id: 424390742
+mas "Disk Speed Test", id: 425264550
+mas "Final Cut Pro", id: 424389933
+mas "Keynote", id: 409183694
+mas "LINE", id: 539883307
+mas "Logic Pro", id: 634148309
+mas "MainStage", id: 634159523
+mas "MARKETSPEED", id: 946680495
+mas "Microsoft Remote Desktop", id: 1295203466
+mas "Motion", id: 434290957
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "The Unarchiver", id: 425424353
+mas "Xcode", id: 497799835
