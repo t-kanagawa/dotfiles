@@ -1,14 +1,15 @@
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
+tap "homebrew/services"
 brew "cask"
+brew "cloudflared"
 brew "docker"
 brew "gh"
 brew "git"
-brew "mariadb"
+brew "mariadb", restart_service: true
 brew "mas"
 brew "openjdk"
 brew "python@3.11"
+brew "tor", restart_service: true
 cask "alfred"
 cask "cloudflare-warp"
 cask "dbeaver-community"
@@ -17,9 +18,12 @@ cask "github"
 cask "google-chrome"
 cask "google-japanese-ime"
 cask "monitorcontrol"
-cask "springtoolsuite"
+cask "sourcetree"
 cask "teamviewer"
+cask "thunderbird"
+cask "tor-browser"
 cask "visual-studio-code"
+cask "vlc"
 mas "BetterSnapTool", id: 417375580
 mas "Compressor", id: 424390742
 mas "Disk Speed Test", id: 425264550
@@ -35,3 +39,13 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "The Unarchiver", id: 425424353
 mas "Xcode", id: 497799835
+vscode "dbaeumer.vscode-eslint"
+vscode "esbenp.prettier-vscode"
+vscode "ms-azuretools.vscode-docker"
+vscode "MS-CEINTL.vscode-language-pack-ja"
+vscode "ms-python.python"
+vscode "msjsdiag.vscode-react-native"
+vscode "vscjava.vscode-gradle"
+vscode "vscode-icons-team.vscode-icons"
+vscode "vscodevim.vim"
+vscode "yzhang.markdown-all-in-one"

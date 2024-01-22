@@ -11,7 +11,7 @@
 Brewfileがあるディレクトリにて下記コマンドを実行。
 
 ```sh
-brew bundle
+sh import_setting.sh
 ```
 
 ## 設定エクスポート
@@ -19,6 +19,5 @@ brew bundle
 下記コマンドを実行
 
 ```sh
-rm -rf Brewfile
-brew bundle dump
+sh export_setting.sh
 ```
