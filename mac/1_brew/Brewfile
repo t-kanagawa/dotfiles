@@ -1,3 +1,4 @@
+tap "cloudflare/cloudflare"
 tap "homebrew/bundle"
 tap "homebrew/services"
 brew "cask"
@@ -41,10 +42,13 @@ mas "The Unarchiver", id: 425424353
 mas "Xcode", id: 497799835
 vscode "dbaeumer.vscode-eslint"
 vscode "esbenp.prettier-vscode"
+vscode "KevinRose.vsc-python-indent"
 vscode "ms-azuretools.vscode-docker"
 vscode "MS-CEINTL.vscode-language-pack-ja"
+vscode "ms-python.black-formatter"
 vscode "ms-python.python"
 vscode "msjsdiag.vscode-react-native"
+vscode "njpwerner.autodocstring"
 vscode "vscjava.vscode-gradle"
 vscode "vscode-icons-team.vscode-icons"
 vscode "vscodevim.vim"
