@@ -9,9 +9,12 @@ brew "git"
 brew "mariadb", restart_service: true
 brew "mas"
 brew "openjdk"
+brew "postgresql@14", restart_service: true
+brew "postgresql@16"
 brew "python@3.11"
 brew "tor", restart_service: true
 cask "alfred"
+cask "brave-browser"
 cask "cloudflare-warp"
 cask "dbeaver-community"
 cask "discord"
@@ -26,6 +29,7 @@ cask "tor-browser"
 cask "visual-studio-code"
 cask "vlc"
 mas "BetterSnapTool", id: 417375580
+mas "ComicViewer", id: 1455702185
 mas "Compressor", id: 424390742
 mas "Disk Speed Test", id: 425264550
 mas "Final Cut Pro", id: 424389933
@@ -42,14 +46,27 @@ mas "The Unarchiver", id: 425424353
 mas "Xcode", id: 497799835
 vscode "dbaeumer.vscode-eslint"
 vscode "esbenp.prettier-vscode"
-vscode "KevinRose.vsc-python-indent"
+vscode "kevinrose.vsc-python-indent"
 vscode "ms-azuretools.vscode-docker"
-vscode "MS-CEINTL.vscode-language-pack-ja"
+vscode "ms-ceintl.vscode-language-pack-ja"
 vscode "ms-python.black-formatter"
+vscode "ms-python.debugpy"
 vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-toolsai.jupyter-renderers"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-toolsai.vscode-jupyter-slideshow"
 vscode "msjsdiag.vscode-react-native"
 vscode "njpwerner.autodocstring"
+vscode "redhat.java"
 vscode "vscjava.vscode-gradle"
+vscode "vscjava.vscode-java-debug"
+vscode "vscjava.vscode-java-dependency"
+vscode "vscjava.vscode-java-pack"
+vscode "vscjava.vscode-java-test"
+vscode "vscjava.vscode-maven"
 vscode "vscode-icons-team.vscode-icons"
 vscode "vscodevim.vim"
 vscode "yzhang.markdown-all-in-one"
